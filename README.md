@@ -1,1 +1,31 @@
 # CODSOFT
+import java.util.Random;
+import java.util.Scanner;
+public class Numgame
+{
+  public static void.main(String[] args)
+  {
+    Random random_num = new Random();
+    Scanner input = new Scanner(System.in);
+    int guess_num = random_num.nextInt(100)+1;
+    int guess = 0;
+    System.out.println("Guess a number between 1 to 100:")
+    while(guess != guess_num)
+    {
+      guess = input.nextln();
+      if (guess < guess_num)
+      {
+        System.out.println("The number is too low");
+      }
+      else if (guess > guess_num)
+      {
+        System.out.println("The number is too high");
+      }
+      else
+      {
+        System.out.println("Your guess is correct!");
+      }
+    }
+    input.close();
+  }
+}
