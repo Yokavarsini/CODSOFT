@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Studgrade
+{
+	Scanner.out.print("Enter the number of Subjects:");
+	int subject=input.nextInt();
+	int[]mark=new int[subject];
+	int total=0;
+	for (int n=0; n<subject; i++)
+	{
+		System.out.print("Enter marks for subjects"+(n+1)+"(Out of 100):");
+		mark[n]=input.nextInt();
+		if (marks[n]<0||marks[n]>100)
+		{
+			Syestem.out.println("Invalid marks! Please enter marks between 0 to 100");
+			i--;
+		}
+		else
+		{
+			total+=marks[n];
+		}
+	}
+double avg=(double) total/subject;
+char grade;
+if(avg>=90)
+{
+	grade="A"
+}
+else if(avg>=80)
+{
+	grade="B";
+}
+else if(avg>=70)
+{
+	grade="C":
+}
+else if(avg>=60)
+{
+	grade="D":
+}
+else if(avg>=50)
+{
+	grade="E"
+}
+else
+{
+	grade="F"
+}
+System.out.println("\n Total Marks="+total);
+System.out.println("Average Percentage="+avg+"%");
+Sysetem.out.println("Grade="+grade);
+input.close();
+}
